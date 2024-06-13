@@ -1,0 +1,251 @@
+
+@charset 'utf-8';
+
+@font-face {
+    font-family: fonte2;
+    src: url(fontes/cocogoose/Cocogoose-Pro-Bold-Italic-trial.ttf);
+}
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/mini_pizza/Mini\ Pizza.ttf);
+}
+
+/* Mobile First */
+body {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=79446), default;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    }
+    
+    nav {
+    background-color: #d32f2f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    }
+    
+    .logo h1 {
+    margin: 0;
+    font-size: 2.7rem;
+    font-family: fonte1;
+
+    }
+
+    .logo img{
+        width: 19%;
+    }
+    
+    .nav-links {
+        text-shadow: 1px 1px 2px black;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+    }
+    
+    .nav-links li {
+    margin: 0 1rem;
+    }
+    
+    .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    
+    .ebi {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-image: url(https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    color: white;
+    }
+
+    .ebi p{
+        font-size: 1.3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .ebi h2{
+        font-family: fonte2;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    
+   
+    h4{
+        text-align: center;
+        font-size: 1em;
+        color: green;
+    }
+
+    h5{
+        text-align: center;
+        font-size: 1em;
+        color: red;
+    }
+
+    h3{
+        text-shadow: 1px 1px #ccc;
+        font-family: fonte2;
+        margin-top: 10%;
+        text-align: center;
+        font-size: 1.9em;
+        color: black;
+    }
+
+    .sabores{
+        background-color: #ffffff;
+        padding-bottom: 5%;
+    }
+
+    .sabores img{
+        width: 20%;
+        position: absolute;
+        animation: move 3s ease alternate infinite;
+        margin-top: 10%;
+    }
+    .precos{
+        background-image: url(https://images.unsplash.com/photo-1611915365928-565c527a0590?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        color: white;
+        width: 88%;
+        margin: 5%;
+        font-size: 1.2em;
+        border-radius: 5px;
+        padding: 5%;
+    
+    }
+    
+    .container {
+    padding: 1rem;
+    }
+    
+    form {
+        background-image: linear-gradient(to bottom right, #d32f2f, #ff5722);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    }
+    
+    .form-group {
+    margin-bottom: 1rem;
+    }
+    
+    label {
+    display: block;
+    margin-bottom: 0.5rem;
+    /* color: #d32f2f; */
+    }
+    
+    input, textarea, select, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    }
+    
+    button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    }
+    
+    button:hover {
+    background-color: #b71c1c;
+    }
+
+    footer{
+        background-color: #ff5722;
+        background-size: cover;
+        text-align: center;
+        padding: 5%;
+        color:white;
+        font-size: 0.9em;
+    }
+
+    footer button{
+        margin: 5%;
+    }
+
+    footer a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+    
+    /* Desktop */
+    @media(min-width: 768px) {
+    nav {
+    text-align: left;
+    padding: 1rem 2rem;
+    }
+    form{
+        margin-bottom: 8%;
+    }
+    .logo h1 {
+        font-size: 2.7rem;
+        margin-top: 1.5%;
+        
+    }
+
+    h2{
+        font-size: 2.7em;
+    }
+
+    .logo{
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+
+      .logo img{
+        width: 7%;
+    }
+   .sabores img{
+    width: 9%;
+    margin: 3%;
+   } 
+    .nav-links {
+        justify-content: flex-end;
+        margin: 0;
+        font-size: 1.5em;
+    }
+    
+    .ebi {
+        padding: 7rem 3rem;
+
+    }
+    
+    h4{
+        font-size: 1.6em;
+    }
+    .container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+  
+}
+
+@keyframes move {
+    from{
+        transform: translateX(-20);
+    }
+
+    to{
+        transform: translateX(calc(100vw - 80px));
+    }
+}
